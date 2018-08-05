@@ -1,0 +1,28 @@
+.form-control {
+  display: inline-block;
+  width: 250px;
+  margin-top: 50px;
+}
+
+.banner {
+  position: relative;
+  height: 400px;
+  margin-bottom: 20px;
+  width: 1600px;
+  background: black;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/UFO.jpg);
+  background-attachment: fixed;
+  background-position: bottom center;
+  background-size: cover;
+  text-align: center;
+}
+
+.banner > h1 {
+  position: absolute;
+  opacity: 0.5;
+  margin-top: 150px;
+  margin-left: 25%;
+  margin-right: 25%;
+  color: light blue;
+  font-size: 5em;
+}

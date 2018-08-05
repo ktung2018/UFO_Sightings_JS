@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>UFO Sighting</title>
+ 
+<!-- Bring in our bootstrap stylesheet -->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+
+<body style="background-color: lightgray">
+    <!-- Banner -->
+    <div class="banner container-fluid text-center">
+        <h1>UFO Sightings</h1>
+    </div>
+
+     <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/">UFO Sightings <img class="nav-ufo" src="ufo.svg"></a>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- Data Table -->
+    <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="form-group">
+              <input type="text" class="form-control" id="datetime-search" placeholder="Date/time">
+              <a id="dateSearchBtn" class="btn btn-default">Search</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <input type="text" class="form-control" id="city-search" placeholder="City">
+                <a id="citySearchBtn" class="btn btn-default">Search</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+              <div class="col-md-4">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="state-search" placeholder="State">
+                  <a id="stateSearchBtn" class="btn btn-default">Search</a>
+                </div>
+              </div>
+            </div>
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="form-group">
+              <input type="text" class="form-control" id="country-search" placeholder="Country">
+              <a id="countrySearchBtn" class="btn btn-default">Search</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="form-group">
+              <input type="text" class="form-control" id="shape-search" placeholder="Shape">
+              <a id="shapeSearchBtn" class="btn btn-default">Search</a>
+              </div>
+            </div>
+          </div>
+
+        <div class="row">
+          <div class="col-md-12">
+	   <li><a href="table.html"> Click to view list of UFO Sightings</a></li>  
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Date Time</th>
+                  <th>City</th>
+                  <th>State</th>
+                  <th>Country</th>
+                  <th>Shape</th>
+                  <th>Duration Minutes</th>
+                  <th>Comment</th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <script src="data.js" type="text/javascript"></script>
+      <script src="index.js" type="text/javascript"></script>
+</body>
+
+</html>
